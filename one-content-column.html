@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Yasu API - Documentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="ticlekiwi">
+
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/hightlightjs-dark.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/code_box.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+</head>
+
+<body class="one-content-column-version">
+
+    <div class="icons">
+        <ul>
+            <li><a href="https://twitter.com/y999su"><i class="fa fa-twitter" style="font-size:35px;"aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/y9su"><i class="fa fa-github" style="font-size:35px;"aria-hidden="true"></i></a></li>
+            <li><a href="https://discordapp.com/users/869395298626187324"><i class="fa fa-discord" style="font-size:35px;"aria-hidden="true"></i></a></li>
+
+        </ul>
+    </div>
+
+<div class="left-menu">
+    <div class="content-logo">
+        <div class="logo">
+            <img alt="platform by Emily van den Heever from the Noun Project" title="platform by Emily van den Heever from the Noun Project" src="images/logo.png" height="32" />
+            <span>Yasu API Documentation</span>
+        </div>
+        <button class="burger-menu-icon" id="button-menu-mobile">
+            <svg width="34" height="34" viewBox="0 0 100 100"><path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path><path class="line line2" d="M 20,50 H 80"></path><path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path></svg>
+        </button>
+    </div>
+    <div class="mobile-menu-closer"></div>
+    <div class="content-menu">
+        <div class="content-infos">
+            <div class="info"><b>Version:</b> 1.0.0</div>
+            <div class="info"><b>Last Updated:</b> 25th June, 2022</div>
+        </div>
+        <ul>
+            <li class="scroll-to-link active" data-target="content-get-started">
+                <a>GET STARTED</a>
+            </li>
+            <li class="scroll-to-link" data-target="rate-limit">
+              <a>RATELIMIT</a>
+            </li>
+            <li class="scroll-to-link" data-target="content-get-characters">
+                <a>GET IMAGES</a>
+            </li>
+            <li class="scroll-to-link" data-target="content-errors">
+                <a>ERRORS</a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<div class="content-page">
+    <div class="content">
+        <div class="overflow-hidden content-section" id="content-get-started">
+            <h1>Get started</h1>
+            <p>
+                Yasu API provides programmatic access to many different random images, which can be then used for a number of things.
+            </p>
+        </div>
+        <div class="overflow-hidden content-section" id="rate-limit">
+            <h1>Rate Limit</h1>
+            <p>
+                Yasu API uses a 50 requests per minute rate-limit, so don't go around spamming the API.
+            </p>
+        </div>
+        <div class="overflow-hidden content-section" id="content-get-characters">
+            <h2>get images</h2>
+            <p>
+                To get images you need to make a GET request to the following url :<br>
+                <code class="higlighted break-word">http://replaceme/{endpoint}</code>
+            </p>
+            <br>
+            <h4>ENDPOINTS</h4>
+            <table>
+                <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>cars</td>
+                    <td>GET</td>
+                    <td>Random Car image</td>
+                </tr>
+                <tr>
+                    <td>sofaygo</td>
+                    <td>GET</td>
+                    <td>Random SoFaygo image</td>
+                </tr>
+                <tr>
+                    <td>juicewrld</td>
+                    <td>GET</td>
+                    <td>
+                        Random Juice WRLD image
+                    </td>
+                </tr>
+                <tr>
+                    <td>oliviarodrigo</td>
+                    <td>GET</td>
+                    <td>
+                        Random Olivia Rodrigo image
+                    </td>
+                </tr>
+                <tr>
+                    <td>yeat</td>
+                    <td>GET</td>
+                    <td>
+                        Random YEAT image
+                    </td>
+                </tr>
+                <tr>
+                    <td>travis</td>
+                    <td>GET</td>
+                    <td>Random Travis Scott image</td>
+                </tr>
+                <tr>
+                    <td>kanye</td>
+                    <td>GET</td>
+                    <td>Random Kanye West image</td>
+                </tr>
+                <tr>
+                  <td>capybara</td>
+                  <td>GET</td>
+                  <td>Random Capybara image</td>
+                </tr>
+                <tr>
+                  <td>zzz</td>
+                  <td>GET</td>
+                  <td>Random Zzz. image</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="overflow-hidden content-section" id="content-errors">
+            <h2>Errors</h2>
+            <p>
+                Yasu API uses the following error codes:
+            </p>
+            <table>
+                <thead>
+                <tr>
+                    <th>Error Code</th>
+                    <th>Meaning</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>404</td>
+                    <td>
+                        Misspelled or Invalid endpoint
+                    </td>
+                <tr>
+                  <td>429</td>
+                  <td>
+                    You are being rate-limited
+                  </td>
+                <tr>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="code-back">
+</div>
+
+<div class="right-container">
+    <div class="code-container">
+        <div class="code-box">
+            <div class="code-container-curl">
+                <div class="box-top">PYTHON EXAMPLE</div>
+                <pre>
+                    <span class="comment"># Python Example</span>
+                    import requests, json
+
+                    r = requests.get(<span class="string">"http://127.0.0.1:8000/car"</span>)
+                    r = r.json()
+
+                    url = r[<span class="string">'url'</span>]
+                    print(url)
+            </div>
+        </div>
+    </div>
+
+    <div class="code-container">
+        <div class="code-box">
+            <div class="code-container-res">
+                <div class="box-top">RESPONSE</div>
+                <pre id="response_code">
+                    {
+                        url: <span class="string">"https://www.cnet.com/a/img/resize/02efa51c6835f560aaed371f90f855
+                            cd07ec94da/hub/2019/11/07/afad8567-7230-479e-8bce-c93d73b5d967/rs-
+                            nissan-gtr-nismo-20-55.jpg?auto=webp&fit=crop&height=675&width=1200"</span>
+                        }
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+
+</html>
