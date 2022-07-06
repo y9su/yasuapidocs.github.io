@@ -1,0 +1,25 @@
+.icons {
+    position: absolute;
+    top: 20px;
+    right: 1%;
+    width: 160px;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 620px) {
+    .icons {
+        width: 130px;
+    }
+  }
+
+  @media only screen and (max-width: 570px) {
+    .icons {
+        width: 100px;
+    }
+  }
+
+.icons ul {
+    display: flex;
+    justify-content:space-around;
+    list-style-type:none;
+}
